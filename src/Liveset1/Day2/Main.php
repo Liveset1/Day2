@@ -7,7 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command; 
 use pocketmine\utils\TextFormat as c; 
 use pocketmine\Player; 
-use pocketmine\Server; j
+use pocketmine\Server; 
 
 class Main extends PluginBase {
 	
