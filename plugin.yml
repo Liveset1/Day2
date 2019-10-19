@@ -1,0 +1,15 @@
+name: Day2
+author: Liveset1
+version: 1.0.2
+api: 3.9.5
+main: Liveset1\Day2\Main
+
+commands:
+  day:
+    description: "Make it Day!"
+    aliases: [dy]
+permissions:
+  day.use:
+    default: op
+  day.command:
+    default: op
