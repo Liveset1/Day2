@@ -1,4 +1,5 @@
 <?php 
+
 namespace Liveset1\Day2;
 
 use pocketmine\plugin;
