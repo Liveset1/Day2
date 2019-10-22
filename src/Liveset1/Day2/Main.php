@@ -25,7 +25,7 @@ class Main extends PluginBase {
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool {
     if($cmd->getName() == "day") {
    	if($sender instanceof Player) {
-   	 if($sender->hasPermission("day.use")) {
+   	 if($sender->hasPermission("day")) {
    	    $player->getLevel()->setTime(0);
             $player->sendMessage($this->fts . TF::GREEN . " You have set the time to day!");
             }else{
