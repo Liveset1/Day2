@@ -26,10 +26,10 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
     if($cmd->getName() == "day") {
    	if($sender instanceof Player) {
    	 if($sender->hasPermission("day.use")) {
-   	    $sender->getLevel()->setTime(0);
-            $sender->sendMessage($this->fts . TF::GREEN . " You have set the time to day!");
+   	    $player->getLevel()->setTime(0);
+            $player->sendMessage($this->fts . TF::GREEN . " You have set the time to day!");
             }else{
-            $sender->sendMessage($this->fts . TF::RED . "You are not allowed to use this command");
+            $player->sendMessage($this->fts . TF::RED . "You are not allowed to use this command");
                }
             }
           return true;
