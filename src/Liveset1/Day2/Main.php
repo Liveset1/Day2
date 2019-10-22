@@ -16,6 +16,7 @@ class Main extends PluginBase {
 	
  public function  onEnable(){
    $this->getLogger()->info("Day Enabled");
+   $this->getServer()->getPluginManager()->registerEvents($this, $this);
 }
  public function onDisable(){         
    $this->getLogger()->info("Disabled Day");     
