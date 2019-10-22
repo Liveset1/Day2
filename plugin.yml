@@ -9,7 +9,5 @@ commands:
     description: "Make it Day!"
     aliases: [dy]
 permissions:
-  day.use:
-    default: op
   day.command:
     default: op
