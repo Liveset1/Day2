@@ -12,7 +12,7 @@ use pocketmine\Server;
 
 class Main extends PluginBase {
 	
-	public $fts = "§7[§bExtraCommands§7]";
+	public $fts = "§7[§bDevCommands§7]";
 	
  public function  onEnable(){
    $this->getLogger()->info("Day Enabled");
@@ -26,7 +26,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
     if($cmd->getName() == "day") {
    	if($sender instanceof Player) {
    	 if($sender->hasPermission("day.use")) {
-   	    $sender->getLevel()->setTime(6000);
+   	    $sender->getLevel()->setTime(0);
             $sender->sendMessage($this->fts . TF::GREEN . " You have set the time to day!");
             }else{
             $sender->sendMessage($this->fts . TF::RED . "You are not allowed to use this command");
